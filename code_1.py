@@ -1,5 +1,9 @@
-numero = input("Vou dobrar o número que você digitar: ")
+numero_str = input("Vou dobrar o número que você digitar: ")
 
-numero_float = float(numero)
-print(numero_float*2)
-print(numero_float*4)
+try:
+    print("STRING:", numero_str)
+    numero_float = float(numero_str)
+    print("FLOAT:", numero_float)
+    print(f"O dobro de {numero_float} é {2*numero_float}")
+except:
+    print("Insira um número válido")
